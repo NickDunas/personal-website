@@ -1,2 +1,10 @@
 @tailwind preflight;
 @tailwind utilities;
+
+a {
+  @apply .text-grey .no-underline;
+}
+
+.is-active {
+  @apply .text-blue .border-b-2 .border-blue;
+}

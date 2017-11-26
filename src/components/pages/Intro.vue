@@ -1,12 +1,12 @@
 <template>
-  <div class="rounded shadow bg-white w-64 p-4">
-    <div class="text-blue"></div>
+  <div class="">
+    Let's build something AWESOME together!
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Intro',
   data () {
     return {
     }

@@ -1,7 +1,10 @@
 <template>
-  <div id="app">
-    <div class="container my-8 bg-grey-lightest">
-      <router-view/>
+  <div id="app" class="font-sans">
+    <div class="bg-grey-lightest w-full min-h-screen">
+      <app-header></app-header>
+      <div class="container mx-auto py-6">
+        <router-view/>
+      </div>
     </div>
   </div>
 </template>
