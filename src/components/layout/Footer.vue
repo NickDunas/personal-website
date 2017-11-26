@@ -4,7 +4,7 @@
       <div class="container mx-auto">
         <div class="flex justify-center">
           <div class="py-4 text-grey-dark">
-            © 2017 <span class="text-grey-dark font-semibold">Nick Dunas</span> - All rights reserved.
+            © {{ year }} <span class="text-grey-dark font-semibold">Nick Dunas</span> - All rights reserved.
           </div>
         </div>
       </div>
@@ -13,7 +13,14 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    computed: {
+      year () {
+        const date = new Date();
+        return date.getFullYear();
+      }
+    }
+  }
 </script>
 
 <style scoped>
