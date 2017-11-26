@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    cool!
+  <div class="rounded shadow bg-white w-64 p-4">
+    <div class="text-blue"></div>
   </div>
 </template>
 
