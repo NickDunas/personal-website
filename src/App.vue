@@ -1,10 +1,11 @@
 <template>
   <div id="app" class="font-sans">
-    <div class="bg-grey-lightest w-full min-h-screen">
+    <div class="flex flex-col bg-grey-lightest w-full min-h-screen">
       <app-header></app-header>
-      <div class="container mx-auto py-6">
+      <div class="container mx-auto py-6 flex-1">
         <router-view/>
       </div>
+      <app-footer></app-footer>
     </div>
   </div>
 </template>

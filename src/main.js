@@ -5,10 +5,12 @@ import App from './App';
 import router from './router';
 
 import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 Vue.config.productionTip = false;
 
 Vue.component('app-header', Header);
+Vue.component('app-footer', Footer);
 
 /* eslint-disable no-new */
 new Vue({
