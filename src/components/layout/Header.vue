@@ -3,7 +3,7 @@
     <div class="container mx-auto">
       <div class="flex justify-between">
         <div class="flex justify-start">
-          <router-link class="px-2 mx-2 py-4" to="/" exact>
+          <router-link class="px-2 py-4" to="/" exact>
             @NickDunas
           </router-link>
         </div>
