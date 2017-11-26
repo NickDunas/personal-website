@@ -21,6 +21,11 @@
     data () {
       return {
       }
+    },
+    head: {
+      title: {
+        inner: 'Welcome to my personal website!'
+      }
     }
   }
 </script>

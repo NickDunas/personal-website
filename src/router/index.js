@@ -1,9 +1,11 @@
 import Vue from 'vue';
+import VueHead from 'vue-head';
 import Router from 'vue-router';
 import Intro from '@/components/pages/Intro';
 import Portfolio from '@/components/pages/Portfolio';
 import Contact from '@/components/pages/Contact';
 
+Vue.use(VueHead);
 Vue.use(Router);
 
 export default new Router({

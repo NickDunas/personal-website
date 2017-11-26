@@ -12,6 +12,11 @@
       return {
         msg: 'Message'
       }
+    },
+    head: {
+      title: {
+        inner: 'Drop me a line!'
+      }
     }
   }
 </script>
