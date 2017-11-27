@@ -1,7 +1,9 @@
 <template>
-  <div class="rounded shadow bg-white w-64 p-4">
-    <div class="text-blue">Contact</div>
-    <div>{{ msg }}</div>
+  <div class="flex-1">
+    <div class="rounded shadow bg-white w-64 p-4">
+      <div class="text-blue">Contact</div>
+      <div>{{ msg }}</div>
+    </div>
   </div>
 </template>
 

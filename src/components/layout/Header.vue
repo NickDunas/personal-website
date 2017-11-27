@@ -8,8 +8,11 @@
           </router-link>
         </div>
         <div class="flex justify-end">
-          <router-link class="px-2 mx-2 py-4" to="/portfolio" exact>
-            Portfolio
+          <router-link class="px-2 mx-2 py-4" to="/work" exact>
+            Work
+          </router-link>
+          <router-link class="px-2 mx-2 py-4" to="/notes" exact>
+            Notes
           </router-link>
           <router-link class="px-2 mx-2 py-4" to="/contact" exact>
             Contact

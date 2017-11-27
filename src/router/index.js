@@ -2,7 +2,8 @@ import Vue from 'vue';
 import VueHead from 'vue-head';
 import Router from 'vue-router';
 import Intro from '@/components/pages/Intro';
-import Portfolio from '@/components/pages/Portfolio';
+import Work from '@/components/pages/Work';
+import Notes from '@/components/pages/Notes';
 import Contact from '@/components/pages/Contact';
 
 Vue.use(VueHead);
@@ -18,9 +19,14 @@ export default new Router({
       component: Intro
     },
     {
-      path: '/portfolio',
-      name: 'Portfolio',
-      component: Portfolio
+      path: '/work',
+      name: 'Work',
+      component: Work
+    },
+    {
+      path: '/notes',
+      name: 'Notes',
+      component: Notes
     },
     {
       path: '/contact',
