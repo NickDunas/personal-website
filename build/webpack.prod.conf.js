@@ -124,7 +124,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       // Path to compiled app
       path.join(__dirname, '../dist'),
       // List of endpoints you wish to pre-render
-      [ '/', '/work', '/notes', '/contact' ]
+      [ '/', '/work', '/notes', '/bio', '/contact' ]
     )
   ]
 });

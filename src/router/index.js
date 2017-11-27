@@ -4,6 +4,7 @@ import Router from 'vue-router';
 import Intro from '@/components/pages/Intro';
 import Work from '@/components/pages/Work';
 import Notes from '@/components/pages/Notes';
+import Bio from '@/components/pages/Bio';
 import Contact from '@/components/pages/Contact';
 
 Vue.use(VueHead);
@@ -27,6 +28,11 @@ export default new Router({
       path: '/notes',
       name: 'Notes',
       component: Notes
+    },
+    {
+      path: '/bio',
+      name: 'Bio',
+      component: Bio
     },
     {
       path: '/contact',

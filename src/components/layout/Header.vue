@@ -14,6 +14,9 @@
           <router-link class="px-2 mx-2 py-4" to="/notes" exact>
             Notes
           </router-link>
+          <router-link class="px-2 mx-2 py-4" to="/bio" exact>
+            Bio
+          </router-link>
           <router-link class="px-2 mx-2 py-4" to="/contact" exact>
             Contact
           </router-link>
