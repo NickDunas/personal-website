@@ -9,7 +9,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
-const PrerenderSpaPlugin = require('prerender-spa-plugin');
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -117,15 +116,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ]),
-
-    // pre-render routes
-    new PrerenderSpaPlugin(
-      // Path to compiled app
-      path.join(__dirname, '../dist'),
-      // List of endpoints you wish to pre-render
-      [ '/', '/work', '/notes', '/bio', '/contact' ]
-    )
+    ])
   ]
 });
 
