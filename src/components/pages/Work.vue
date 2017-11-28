@@ -1,49 +1,80 @@
 <template>
-  <div class="container mx-auto py-6 flex-1 flex flex-wrap items-center">
-    <div class="max-w-sm rounded overflow-hidden shadow-lg relative">
-      <div class="absolute pin-r my-6 mx-4">
-        <a href="http://www.ecwix.com/en" target="_blank" class="text-sm text-white mx-1 rounded border-b-2 border-blue-dark px-3 py-1 shadow bg-blue-light hover:bg-blue">
-          View
-        </a>
-        <a href="https://steel.ecwix.com/register" target="_blank" class="text-sm text-white mx-1 rounded border-b-2 border-blue-dark px-3 py-1 shadow bg-blue-light hover:bg-blue">
-          Demo
-        </a>
-      </div>
-      <img src="~@/assets/img/covers/ecwix.jpg" alt="Ecwix Engineering">
-      <div class="px-6 py-4">
-        <div class="flex">
-          <div class="pr-4">
-            <img src="~@/assets/img/logos/ecwix.png" class="w-16" alt="Ecwix Engineering">
-          </div>
-          <div class="">
-            <div class="font-semibold text-grey-darker text-2xl my-2 italic">Ecwix Engineering</div>
-            <div class="font-thin text-lg text-grey-darker mb-2 italic">Optimized Structural Design</div>
-          </div>
-        </div>
+  <div class="container mx-auto py-6 flex-1">
+    <div class="text-3xl text-grey-dark font-thin border-b border-grey-light mb-6 py-2">
+      # Personal projects
+    </div>
 
-        <p class="text-grey-darker text-base mt-2">
-          A SaaS platform powering the design of steel structures according to the Eurocode. State of the art technologies are implemented to offer a flexible, easy to use web interface.
-        </p>
-      </div>
-      <div class="px-6 py-4 bg-grey-lighter">
-        <span class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1">Laravel</span>
-        <span class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1">Mysql</span>
-        <span class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1">jQuery</span>
-        <span class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1">WebGL</span>
-        <span class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1">three.js</span>
-        <span class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1">d3.js</span>
-        <span class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1">Bootstrap</span>
+    <div class="flex flex-wrap -mx-4 items-center">
+      <div class="md:w-1/3 px-4" v-for="project in personalProjects">
+        <app-project-card
+            :name="project.name"
+            :title="project.title"
+            :tagLine="project.tagLine"
+            :start="project.start"
+            :end="project.end"
+            :description="project.description"
+            :website="project.website"
+            :demo="project.demo"
+            :tags="project.tags"
+        ></app-project-card>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import ProjectCard from '@/components/layout/ProjectCard';
+
   export default {
+    data () {
+      return {
+        personalProjects: [
+          {
+            name: 'ecwix',
+            title: 'Ecwix Engineering',
+            tagLine: 'Optimized Structural Design',
+            start: 'October 2014',
+            end: 'Till now',
+            description: 'A SaaS platform for designing steel connections, dedicated to steel structural engineers.',
+            website: 'http://www.ecwix.com/en',
+            demo: 'https://steel.ecwix.com/register',
+            tags: [
+              'Laravel',
+              'Mysql',
+              'jQuery',
+              'WebGL',
+              'three.js',
+              'd3.js',
+              'Bootstrap'
+            ]
+          },
+          {
+            name: 'abroker',
+            title: 'aBroker.gr',
+            tagLine: 'Real Estate Manager',
+            start: 'October 2016',
+            end: 'Till now',
+            description: 'A web application for managing real estate listings, dedicated to greek real estate agencies.',
+            website: 'http://www.abroker.gr',
+            demo: 'https://demo.abroker.gr/login',
+            tags: [
+              'Laravel',
+              'Mysql',
+              'jQuery',
+              'd3.js',
+              'Bootstrap'
+            ]
+          }
+        ]
+      };
+    },
     head: {
       title: {
         inner: 'Let\'s have a look on stuff that I\'ve build!'
       }
+    },
+    components: {
+      'app-project-card': ProjectCard
     }
   }
 </script>
