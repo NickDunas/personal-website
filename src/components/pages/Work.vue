@@ -1,8 +1,9 @@
 <template>
   <div class="container mx-auto flex-1 my-6">
     <div v-for="list in lists">
-      <div class="text-3xl text-grey-dark font-thin border-b border-grey-light mb-6 py-2">
-        # {{ list.title }}
+      <div class="text-3xl text-grey-dark border-b border-grey-light my-4 pb-2">
+        <span class="text-blue">#</span> {{ list.title }}
+        <span class="text-xl font-thin text-blue">{{ list.subtitle }}</span>
       </div>
 
       <div class="flex flex-wrap -mx-4 items-center mb-4">
@@ -32,7 +33,8 @@
       return {
         lists: [
           {
-            title: 'Personal projects',
+            title: 'Personal',
+            subtitle: 'projects',
             projects: [
               {
                 name: 'ecwix',
@@ -70,7 +72,8 @@
             ]
           },
           {
-            title: 'Participating projects',
+            title: 'Participating',
+            subtitle: 'projects',
             projects: [
               {
                 name: 'expivi',

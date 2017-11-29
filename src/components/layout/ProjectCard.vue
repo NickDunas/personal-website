@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full rounded overflow-hidden shadow-md">
+  <div class="w-full rounded overflow-hidden shadow">
     <div class="relative">
       <div class="absolute pin-r pin-b my-6 mx-4">
         <a v-show="checkUrl(website)" :href="website" target="_blank" class="text-sm text-white mx-1 rounded border-b-2 border-blue-dark px-3 py-1 shadow bg-blue-light hover:bg-blue hover:text-white">

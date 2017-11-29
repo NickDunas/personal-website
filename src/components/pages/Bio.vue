@@ -5,7 +5,7 @@
       <span class="text-xl font-thin text-blue italic">a quick intro</span>
     </div>
 
-    <div class="rounded bg-white shadow p-6">
+    <div class="rounded bg-white shadow p-6 border-l-4 border-grey-light">
       <p class="py-2 leading-normal text-lg">
         My name is Nick Dunas, I am {{ age() }} years old and I live in Thessaloniki, Greece.
       </p>
@@ -28,7 +28,7 @@
       <span class="text-xl font-thin text-blue italic">technologies that I am familiar with</span>
     </div>
 
-    <div class="rounded bg-white shadow p-6">
+    <div class="rounded bg-white shadow p-6 border-l-4 border-grey-light">
       <div class="py-2 table">
         <div v-for="pack in stack" class="table-row">
           <div class="table-cell text-blue-dark text-semibold">
@@ -48,7 +48,7 @@
       <span class="text-xl font-thin text-blue italic">most significant moments in my career</span>
     </div>
 
-    <div class="rounded bg-white shadow p-6">
+    <div class="rounded bg-white shadow p-6 border-l-4 border-grey-light">
       <div class="py-2 table">
         <div v-for="milestone in milestones" class="table-row">
           <div class="table-cell text-blue-dark text-semibold">
