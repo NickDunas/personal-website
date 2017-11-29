@@ -5,36 +5,40 @@
       <span class="text-xl font-thin text-blue italic">a quick intro</span>
     </div>
 
-    <p class="py-2 leading-normal text-lg">
-      My name is Nick Dunas, I am {{ age() }} years old and I live in Thessaloniki, Greece.
-    </p>
+    <div class="rounded bg-white shadow p-6">
+      <p class="py-2 leading-normal text-lg">
+        My name is Nick Dunas, I am {{ age() }} years old and I live in Thessaloniki, Greece.
+      </p>
 
-    <p class="py-2 leading-normal text-lg">
-      I hold an M.Eng. in Civil Engineering from the Polytechnic department of the Aristotle University of Thessaloniki, specializing in steel structures. Having worked in Greece as a site engineer for a significant amount of time, I got the opportunity to work in Germany as an industrial steel structural engineer and a steel detailer as well.
-    </p>
+      <p class="py-2 leading-normal text-lg">
+        I hold an M.Eng. in Civil Engineering from the Polytechnic department of the Aristotle University of Thessaloniki, specializing in steel structures. Having worked in Greece as a site engineer for a significant amount of time, I got the opportunity to work in Germany as an industrial steel structural engineer and a steel detailer as well.
+      </p>
 
-    <p class="py-2 leading-normal text-lg">
-      Nevertheless, technology was always my passion. I am a self-taught web programmer and I have been a freelancer web designer and web developer for many years.
-    </p>
+      <p class="py-2 leading-normal text-lg">
+        Nevertheless, technology was always my passion. I am a self-taught web programmer and I have been a freelancer web designer and web developer for many years.
+      </p>
 
-    <p class="py-2 leading-normal text-lg">
-      In 2014, I decided to quit my job as a Structural Engineer, in Germany, and I decided to make a turn in my career, following my hobby and passion, web development.
-    </p>
+      <p class="py-2 leading-normal text-lg">
+        In 2014, I decided to quit my job as a Structural Engineer, in Germany, and I decided to make a turn in my career, following my hobby and passion, web development.
+      </p>
+    </div>
 
     <div class="text-3xl border-b border-grey-light my-4 pb-2 pt-4">
       <span class="text-blue">#</span> Stack
       <span class="text-xl font-thin text-blue italic">technologies that I am familiar with</span>
     </div>
 
-    <div class="py-2 table">
-      <div v-for="pack in stack" class="table-row">
-        <div class="table-cell text-blue-dark text-semibold">
-          {{ pack.title }}
-        </div>
-        <div class="table-cell">
-          <a :href="tagLink(tag)" target="_blank" v-for="tag in pack.tags" class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1 items-center">
-            <img :src="tagLogo(tag)" class="h-4 mr-1" :alt="tag"> {{ tag }}
-          </a>
+    <div class="rounded bg-white shadow p-6">
+      <div class="py-2 table">
+        <div v-for="pack in stack" class="table-row">
+          <div class="table-cell text-blue-dark text-semibold">
+            {{ pack.title }}
+          </div>
+          <div class="table-cell">
+            <a :href="tagLink(tag)" target="_blank" v-for="tag in pack.tags" class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1 items-center">
+              <img :src="tagLogo(tag)" class="h-4 mr-1" :alt="tag"> {{ tag }}
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -44,13 +48,15 @@
       <span class="text-xl font-thin text-blue italic">most significant moments in my career</span>
     </div>
 
-    <div class="py-2 table">
-      <div v-for="milestone in milestones" class="table-row">
-        <div class="table-cell text-blue-dark text-semibold">
-          {{ milestone.start }} - {{ milestone.end }}
-        </div>
-        <div class="table-cell">
-          {{ milestone.text }}
+    <div class="rounded bg-white shadow p-6">
+      <div class="py-2 table">
+        <div v-for="milestone in milestones" class="table-row">
+          <div class="table-cell text-blue-dark text-semibold">
+            {{ milestone.start }} - {{ milestone.end }}
+          </div>
+          <div class="table-cell">
+            {{ milestone.text }}
+          </div>
         </div>
       </div>
     </div>
