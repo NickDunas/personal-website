@@ -1,25 +1,51 @@
 <template>
-  <div class="bg-white w-full border-b border-grey-lighter">
+  <div class="bg-white w-full border-b border-grey-lighter shadow">
     <div class="container mx-auto">
       <div class="flex justify-between">
         <div class="flex justify-start">
-          <router-link class="px-2 py-4" to="/" exact>
-            @NickDunas
+          <div class="sm:flex sm:items-center mr-4">
+            <img class="block h-12 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-3 sm:ml-0" src="~@/assets/img/me.jpg" alt="">
+            <div class="text-center sm:text-left sm:flex-grow">
+              <div class="">
+                <p class="text-2xl leading-tight text-blue">Nick Dunas</p>
+                <p class="leading-tight font-thin text-grey-dark">Full-stack Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <router-link class="px-4 py-6" to="/" exact>
+            Intro
           </router-link>
-        </div>
-        <div class="flex justify-end">
-          <router-link class="px-2 mx-2 py-4" to="/work" exact>
+
+          <router-link class="px-4 py-6" to="/work" exact>
             Work
           </router-link>
-          <router-link class="px-2 mx-2 py-4" to="/notes" exact>
+
+          <router-link class="px-4 py-6" to="/notes" exact>
             Notes
           </router-link>
-          <router-link class="px-2 mx-2 py-4" to="/bio" exact>
+
+          <router-link class="px-4 py-6" to="/bio" exact>
             Bio
           </router-link>
-          <router-link class="px-2 mx-2 py-4" to="/contact" exact>
+
+          <router-link class="px-4 py-6" to="/contact" exact>
             Contact
           </router-link>
+        </div>
+
+        <div class="flex justify-end">
+          <a href="https://twitter.com/NickDunas" target="_blank" class="px-2 mx-2 py-6">
+            <icon name="twitter" class="text-blue-light"></icon>
+          </a>
+
+          <a href="https://github.com/NickDunas" target="_blank" class="px-2 mx-2 py-6">
+            <icon name="github" class="text-grey-darkest"></icon>
+          </a>
+
+          <a href="https://www.linkedin.com/in/ndunas/" target="_blank" class="px-2 mx-2 py-6">
+            <icon name="linkedin" class="text-blue-dark"></icon>
+          </a>
         </div>
       </div>
     </div>

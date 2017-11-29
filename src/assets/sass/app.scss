@@ -5,6 +5,10 @@ a {
   @apply .text-grey .no-underline;
 }
 
+a:hover {
+  @apply .text-blue;
+}
+
 .is-active {
-  @apply .text-blue .border-b-2 .border-blue;
+  @apply .text-blue-dark .bg-grey-lightest;
 }

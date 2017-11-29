@@ -2,7 +2,7 @@
   <div class="container mx-auto py-6 flex-1 flex items-center">
     <div class="flex flex-col">
       <div class="my-4 text-4xl text-semibold text-blue">
-        Hiya, I'm Nick, a Web Developer!
+        Hiya, I'm Nick, a Full-stack Developer!
       </div>
 
       <div class="my-4 text-grey-darker text-3xl font-thin">

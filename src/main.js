@@ -7,6 +7,16 @@ import router from './router';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
+/**
+ * Load font-awesome icons
+ */
+import 'vue-awesome/icons/twitter';
+import 'vue-awesome/icons/github';
+import 'vue-awesome/icons/linkedin';
+import Icon from 'vue-awesome/components/Icon';
+
+Vue.component('icon', Icon);
+
 Vue.config.productionTip = false;
 
 Vue.component('app-header', Header);

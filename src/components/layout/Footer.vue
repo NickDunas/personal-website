@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="bg-white w-full border-t border-grey-lighter">
+  <div class="">
+    <div class="bg-white shadow w-full border-t border-grey-lighter">
       <div class="container mx-auto">
         <div class="flex justify-center">
           <div class="py-4 text-grey-dark">
