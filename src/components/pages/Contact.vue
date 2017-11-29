@@ -2,18 +2,17 @@
   <div class="container mx-auto py-6 flex-1 flex items-center">
     <div class="flex flex-col">
       <div class="my-4 text-4xl text-semibold text-blue">
-        Hiya, I'm Nick, a Full-stack Developer!
+        Do you have an awesome idea?
       </div>
 
       <div class="my-4 text-grey-darker text-3xl font-thin">
-        I enjoy building web applications using
-        <vue-typer :text='["Laravel", "Vue.js", "Angular", "Webpack"]'></vue-typer>.
+        Let's discuss about it!
       </div>
 
       <div class="my-4 flex">
-        <router-link class="rounded-lg shadow-lg block p-4 bg-blue hover:bg-blue-dark border-b-4 border-blue-darker text-white text-lg" to="/work">
-          Have a look at my work so far!
-        </router-link>
+        <a href="mailto:nntounas@gmail.com" class="rounded-lg shadow-lg block p-4 bg-blue hover:bg-blue-dark border-b-4 border-blue-darker text-white text-lg hover:text-white" to="/work">
+          Send me a mail
+        </a>
       </div>
     </div>
   </div>
@@ -21,12 +20,6 @@
 
 <script>
   export default {
-    name: 'Contact',
-    data () {
-      return {
-        msg: 'Message'
-      }
-    },
     head: {
       title: {
         inner: 'Drop me a line!'

@@ -12,3 +12,11 @@ a:hover {
 .is-active {
   @apply .text-blue-dark .bg-grey-lightest;
 }
+
+.table-cell {
+  @apply .p-3;
+}
+
+.table-row {
+  @apply .border-b-2 .border-grey;
+}

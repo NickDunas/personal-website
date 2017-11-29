@@ -11,7 +11,7 @@
       </div>
 
       <div class="my-4 flex">
-        <router-link class="rounded-lg shadow-lg block p-4 bg-blue hover:bg-blue-dark border-b-4 border-blue-darker text-white text-lg" to="/work">
+        <router-link class="rounded-lg shadow-lg block p-4 bg-blue hover:bg-blue-dark border-b-4 border-blue-darker text-white text-lg hover:text-white" to="/work">
           Have a look at my work so far!
         </router-link>
       </div>

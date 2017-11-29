@@ -21,10 +21,6 @@
             Work
           </router-link>
 
-          <router-link class="px-4 py-6" to="/notes" exact>
-            Notes
-          </router-link>
-
           <router-link class="px-4 py-6" to="/bio" exact>
             Bio
           </router-link>

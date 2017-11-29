@@ -46,7 +46,9 @@
                 tags: [
                   'Laravel',
                   'jQuery',
-                  'Bootstrap'
+                  'threejs',
+                  'Bootstrap',
+                  'git'
                 ]
               },
               {
@@ -61,7 +63,8 @@
                 tags: [
                   'Laravel',
                   'jQuery',
-                  'Bootstrap'
+                  'Bootstrap',
+                  'git'
                 ]
               }
             ]
@@ -81,7 +84,8 @@
                 tags: [
                   'Laravel',
                   'Angular',
-                  'Bootstrap'
+                  'Bootstrap',
+                  'git'
                 ]
               }
             ]

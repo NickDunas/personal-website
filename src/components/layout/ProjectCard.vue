@@ -2,10 +2,10 @@
   <div class="w-full rounded overflow-hidden shadow-md">
     <div class="relative">
       <div class="absolute pin-r pin-b my-6 mx-4">
-        <a v-show="checkUrl(website)" :href="website" target="_blank" class="text-sm text-white mx-1 rounded border-b-2 border-blue-dark px-3 py-1 shadow bg-blue-light hover:bg-blue">
+        <a v-show="checkUrl(website)" :href="website" target="_blank" class="text-sm text-white mx-1 rounded border-b-2 border-blue-dark px-3 py-1 shadow bg-blue-light hover:bg-blue hover:text-white">
           View
         </a>
-        <a v-show="checkUrl(demo)" :href="demo" target="_blank" class="text-sm text-white mx-1 rounded border-b-2 border-blue-dark px-3 py-1 shadow bg-blue-light hover:bg-blue">
+        <a v-show="checkUrl(demo)" :href="demo" target="_blank" class="text-sm text-white mx-1 rounded border-b-2 border-blue-dark px-3 py-1 shadow bg-blue-light hover:bg-blue hover:text-white">
           Demo
         </a>
       </div>
@@ -77,7 +77,9 @@
           {'name': 'laravel', 'url': 'https://laravel.com'},
           {'name': 'jquery', 'url': 'https://jquery.com'},
           {'name': 'bootstrap', 'url': 'https://getbootstrap.com'},
-          {'name': 'angular', 'url': 'https://angular.io'}
+          {'name': 'angular', 'url': 'https://angular.io'},
+          {'name': 'git', 'url': 'https://git-scm.com/'},
+          {'name': 'threejs', 'url': 'https://threejs.org/'}
         ];
 
         return links.find((item) => {
