@@ -35,7 +35,7 @@
             {{ pack.title }}
           </div>
           <div class="table-cell">
-            <a :href="tagLink(tag)" target="_blank" v-for="tag in pack.tags" class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1 items-center">
+            <a :href="tagLink(tag)" target="_blank" v-for="tag in pack.tags" class="inline-block bg-grey-lightest shadow rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 my-1 items-center border-blue-lighter border-b-2">
               <img :src="tagLogo(tag)" class="h-4 mr-1" :alt="tag"> {{ tag }}
             </a>
           </div>
@@ -126,8 +126,8 @@
             text: 'Working full-time as a Civil Structural Engineer.'
           },
           {
-            start: '2010',
-            end: '2004',
+            start: '2004',
+            end: '2010',
             text: 'Studied Civil Engineering.'
           },
           {

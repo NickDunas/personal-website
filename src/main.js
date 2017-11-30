@@ -13,6 +13,7 @@ import Footer from '@/components/layout/Footer';
 import 'vue-awesome/icons/twitter';
 import 'vue-awesome/icons/github';
 import 'vue-awesome/icons/linkedin';
+import 'vue-awesome/icons/envelope';
 import Icon from 'vue-awesome/components/Icon';
 
 Vue.component('icon', Icon);

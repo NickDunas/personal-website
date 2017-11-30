@@ -42,6 +42,10 @@
           <a href="https://www.linkedin.com/in/ndunas/" target="_blank" class="px-2 mx-2 py-6">
             <icon name="linkedin" class="text-blue-dark"></icon>
           </a>
+
+          <a href="mailto:nntounas@gmail.com" target="_blank" class="px-6 mx-2 py-6 bg-blue">
+            <icon name="envelope" class="text-grey-lightest"></icon>
+          </a>
         </div>
       </div>
     </div>
