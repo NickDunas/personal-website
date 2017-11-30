@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-6 flex-1 text-grey-dark">
+  <div class="container px-3 md:px-0 mx-auto py-6 flex-1 text-grey-dark">
     <div class="text-3xl border-b border-grey-light my-4 pb-2">
       <span class="text-blue">#</span> Bio
       <span class="text-xl font-thin text-blue italic">a quick intro</span>

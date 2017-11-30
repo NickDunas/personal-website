@@ -1,9 +1,9 @@
 <template>
   <div class="bg-white w-full border-b border-grey-lighter shadow">
     <div class="container mx-auto">
-      <div class="flex justify-between">
-        <div class="flex justify-start">
-          <div class="sm:flex sm:items-center mr-4">
+      <div class="flex flex-wrap justify-between">
+        <div class="flex flex-wrap justify-start">
+          <div class="flex flex-row sm:items-center mr-4 items-center">
             <img class="block h-12 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-3 sm:ml-0" src="~@/assets/img/me.jpg" alt="">
             <div class="text-center sm:text-left sm:flex-grow">
               <div class="">
@@ -13,21 +13,23 @@
             </div>
           </div>
 
-          <router-link class="px-4 py-6" to="/" exact>
-            Intro
-          </router-link>
+          <div class="flex flex-wrap">
+            <router-link class="px-4 py-6" to="/" exact>
+              Intro
+            </router-link>
 
-          <router-link class="px-4 py-6" to="/work" exact>
-            Work
-          </router-link>
+            <router-link class="px-4 py-6" to="/work" exact>
+              Work
+            </router-link>
 
-          <router-link class="px-4 py-6" to="/bio" exact>
-            Bio
-          </router-link>
+            <router-link class="px-4 py-6" to="/bio" exact>
+              Bio
+            </router-link>
 
-          <router-link class="px-4 py-6" to="/contact" exact>
-            Contact
-          </router-link>
+            <router-link class="px-4 py-6" to="/contact" exact>
+              Contact
+            </router-link>
+          </div>
         </div>
 
         <div class="flex justify-end">

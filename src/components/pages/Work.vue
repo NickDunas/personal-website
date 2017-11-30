@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto flex-1 my-6">
+  <div class="container px-3 md:px-0 mx-auto flex-1 my-6">
     <div v-for="list in lists">
       <div class="text-3xl text-grey-dark border-b border-grey-light my-4 pb-2">
         <span class="text-blue">#</span> {{ list.title }}

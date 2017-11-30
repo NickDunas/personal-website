@@ -1,6 +1,6 @@
 <template>
   <div class="flex-1 icons flex items-center">
-    <div class="container mx-auto py-6 flex">
+    <div class="container px-3 lg:px-0 mx-auto py-6 flex">
       <div class="flex flex-col">
         <div class="my-4 text-4xl text-semibold text-blue">
           Hiya, I'm Nick, a Full-stack Developer!
@@ -19,7 +19,6 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
