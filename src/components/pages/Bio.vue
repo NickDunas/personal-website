@@ -157,7 +157,7 @@
           {'name': 'es6', 'url': 'https://angular.io'},
           {'name': 'git', 'url': 'https://git-scm.com/'},
           {'name': 'threejs', 'url': 'https://threejs.org/'},
-          {'name': 'tailwindcss', 'url': 'https://threejs.org/'},
+          {'name': 'tailwindcss', 'url': 'https://tailwindcss.com/'},
           {'name': 'bulma', 'url': 'https://bulma.io/'},
           {'name': 'photoshop', 'url': 'https://adobe.com/'}
         ];
