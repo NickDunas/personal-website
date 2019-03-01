@@ -106,8 +106,13 @@
         ],
         milestones: [
           {
+            start: '01/2018',
+            end: 'Now',
+            text: 'Working remotely for Heliocentrix, as a Full-Stack Developer.'
+          },
+          {
             start: '06/2017',
-            end: '11/2017',
+            end: '12/2017',
             text: 'Working remotely for Expivi, as a Full-Stack Developer.'
           },
           {
